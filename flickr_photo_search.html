@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rock+Salt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/flickr_photo_search.css">
+    <title>Flickr API</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <header class="hero">
+            <section class="hero-center">
+                <h1>Search Flickr Photo</h1>
+                <form>
+                    <section class="search-photos">
+                        <input class="search-text" type="text" id="query">
+                        <button class="search-button">Search</button>
+                    </section>
+                </form>
+            </section>
+        </header>
+
+        <form class="buttons-and-select">
+            <section class="cat-buttons">
+                <button class="cats">Cats</button>
+                <button class="tigers">Tigers</button>
+                <button class="lions">Lions</button>
+            </section>
+            <section class="select">
+                <label for="number-of-photos">Photos per page:</label>
+                <select id="number-of-photos" name="number-of-photos" form="photo-form">
+                    <option value="18">18</option>
+                    <option value="36">36</option>
+                    <option value="72">72</option>
+                </select>
+            </section>
+        </form>
+
+        <main>
+            <section class="overlay hide"></section>
+
+            <ul class="gallery" id="images"></ul>
+
+            <section class="pagination">
+                <a class="prev-page" href="#">&laquo;</a>
+                <a class="links" href="#">1</a>
+                <a class="links" href="#">2</a>
+                <a class="links" href="#">3</a>
+                <a class="links" href="#">4</a>
+                <a class="next-page" href="#">&raquo;</a>
+            </section>
+        </main>
+
+        <footer>
+            <a href="mailto:tigerlotuz@gmail.com">Tigerlotuz</a>
+        </footer>
+    </div>
+    <script src="/flickr_photo_search.js"></script>
+</body>
+
+</html>
